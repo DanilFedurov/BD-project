@@ -1,0 +1,30 @@
+{% block content %}
+
+<head>
+  <style type="text/css">
+   .center{
+      text-align:  center;
+  } 
+  </style>
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css"> 
+  <title>PAGE3</title>
+</head>
+
+<body>
+  <div class ="w3-bar w3-teal">
+    <a href="http://127.0.0.1:5000/Page2" class= "w3-jumbo w3-button w3-left w3-btn w3-teal" target = "_self"><font color="black">Back</a>
+  </div>
+  <div class="w3-display-middle w3-xxlarge center"><br><br>
+    <font class = "w3-jumbo" color="black">Sign in<br><br></font>
+    <form action ="" method ="post">
+      <input type="text"  style="margin:1px"name="user_login"  placeholder="login" required /><br>
+      <input type="password"  style="margin:1px"name="user_pass" placeholder="password" required/><br><br>
+      <div class ='center' color="black" >
+        <input type="submit" class= "w3-jumbo w3-button w3-btn w3-block w3-teal center" name="Submit" color="black" value="Submit" />
+      </div>
+      
+    </form>
+  </div>
+</body>
+
+{%endblock %}

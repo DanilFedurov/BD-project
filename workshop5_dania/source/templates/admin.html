@@ -1,0 +1,43 @@
+<script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.6/d3.min.js"></script>
+
+<head>
+  <style type="text/css">
+    .center{
+      text-align:  center;
+    } 
+  </style>
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css"> 
+  <title>Admin page</title>
+</head>
+
+<body>
+  <div class ="w3-bar w3-teal">
+    <a href="http://127.0.0.1:5000/Page5" class= "w3-jumbo w3-button w3-left w3-btn w3-teal" target = "_self"><font color="black">Back</a>
+    <a href="http://127.0.0.1:5000/graphs" class= "w3-jumbo w3-button w3-right w3-btn w3-teal" target = "_self"><font color="black">Graphs</a>
+  </div><br>
+
+  <div class="center">
+    <font class = "w3-jumbo center" color="black">Form to add predictions:</font>
+  </div>
+  <form method ="post">
+    <div class ='center w3-xxlarge' color="black" >
+        <br><input type="text"style="margin:1px" name="prediction_description" placeholder="Prediction" required /><br><br>
+      <input type="submit" class= "w3-jumbo w3-button w3-btn w3-block w3-teal center" name="Submit1" color="black" value="Submit" />
+    </div>
+  </form>
+
+  <div class="center"><br><br>
+    <font class = "w3-jumbo center" color="black">Form to add today`s history:<br></font>
+  </div>
+
+  <form method ="post">
+    <div class ='center w3-xxlarge'><br>
+      <input type="date"style="margin:1px" name="numerology_date" placeholder="Date" required />
+      <input type="text"style="margin:1px" name="numerology_description" placeholder="Description" required /><br><br>
+      <div class ='center' color="black">
+        <input type="submit" class= "w3-jumbo w3-button w3-btn w3-block w3-teal center" name="Submit2" color="black" value="Submit" />
+      </div>      
+    </div>
+  </form> 
+</body>

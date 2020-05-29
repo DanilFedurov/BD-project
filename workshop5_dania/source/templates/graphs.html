@@ -1,0 +1,45 @@
+<script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.6/d3.min.js"></script>
+
+<head>
+  <style type="text/css">
+    .center{
+      text-align:  center;
+    } 
+  </style>
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css"> 
+  <title>graphs</title>
+</head>
+
+<body>
+  <div class ="w3-bar w3-teal">
+    <a href="http://127.0.0.1:5000/adminpage" class= "w3-jumbo w3-button w3-left w3-btn w3-teal" target = "_self"><font color="black">Back</a>
+  </div><br><br>
+
+  <div class= "w3-wide center">
+    <font size="515" color="black">Pie char to see percentage of prediction and history events in the database </font>
+  </div>
+
+  {%if check == 0%}
+    <div class="container row col-md-6 chart text mywidth center" id="piegrahp">
+      <script class="chart">
+        var graphs = {{plot1 | safe}};
+        Plotly.plot('piegrahp',graphs,{});
+      </script>
+    </div>
+  {% endif %}
+  {%if check == 1%}
+    <div class= "w3-wide center">
+      <font size="515" color="black"><br>No data in the prediction database or in history events database<br></font><br>
+    </div>
+  {% endif %}
+  <div class= "w3-wide center">
+    <font size="515" color="black">Count of user on Y-axis</font>
+  </div>
+  <div class="container row col-md-6 chart center mywidth" id="bar">
+    <script>
+      var graphs = {{plot2 | safe}};
+      Plotly.plot('bar',graphs,{});
+    </script>
+  </div>
+</body>

@@ -1,0 +1,34 @@
+{% block content %}
+<head>
+	<style type="text/css">
+    	.center{
+      		text-align:  center;
+    	} 
+  	</style>
+  	<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  	{% if redir == 'login'  %}
+		<meta http-equiv="refresh" content="1;http://127.0.0.1:5000/Page3">
+    {% endif %}
+  	{% if redir == 'registration'  %}
+		<meta http-equiv="refresh" content="1;http://127.0.0.1:5000/Page4">
+    {% endif %}
+  	{% if redir == 'numerologic'  %}
+		<meta http-equiv="refresh" content="1;http://127.0.0.1:5000/Page5">
+    {% endif %}
+  	{% if redir == 'prediction'  %}
+		<meta http-equiv="refresh" content="1;http://127.0.0.1:5000/Page5">
+    {% endif %}
+    {% if redir == 'admin'  %}
+    <meta http-equiv="refresh" content="1;http://127.0.0.1:5000/adminpage">
+    {% endif %}   
+</head>
+
+<div class="center">
+    <font class = "w3-jumbo w3-display-middle center" color="black">
+    	ERROR<br>
+		{{text}}
+    </font>
+</div>
+
+
+{%endblock %}

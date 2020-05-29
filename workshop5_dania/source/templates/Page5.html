@@ -1,0 +1,24 @@
+<head>
+  <style type="text/css">
+    .center{
+      text-align:  center;
+    } 
+  </style>
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css"> 
+  <title>PAGE5</title>
+</head>
+
+<body>
+  <div class ="w3-bar w3-teal">
+    
+    {% if admin == 1  %}
+      <a href="http://127.0.0.1:5000/adminpage" class= "w3-jumbo w3-button w3-right w3-btn w3-teal" target = "_self"><font color="black">Admin</a>
+    {% endif %}
+
+    <a href="http://127.0.0.1:5000/Page2" class= "w3-jumbo w3-button w3-left w3-btn w3-teal" target = "_self"><font color="black">Back</a>
+  </div>
+  <div class="w3-display-middle">
+      <a href="http://127.0.0.1:5000/Page6" class= "w3-jumbo w3-button w3-btn w3-block w3-teal center" target = "_self"><font color="black">Prediction for today</a><br><br><br><br>
+      <a href="http://127.0.0.1:5000/Page7" class= "w3-jumbo w3-button w3-btn w3-block w3-teal center" target = "_self"><font color="black">Today's history</a>
+  </div>
+</body>
